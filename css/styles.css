@@ -893,21 +893,6 @@ transform: translateY(0);
   color: var(--color-brand);
 }
 
-.subscribtion {
-margin-left: 70px;
-}
-
-.subscribtion-head {
-    margin-top: 0;
-    margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.143;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-  color: var(--color-main-bcg);
-}
-
 .subscribtion-list {
   display: flex;
   gap: 10px;
@@ -924,16 +909,13 @@ margin-left: 70px;
   justify-content: center;
   width: 44px;
   height: 44px;
-
+  fill: var(--color-main-bcg);
+  background-color: var(--color-subscr-icon-bcg);
   border-radius: 50%;
   cursor: pointer;
-  fill: var(--color-main-bcg);
-  transition-property: color, background-color, shadow, filter;
-    transition-duration: 250ms;
-    transition-timing-function: var(--color-function);
 }
 
-.subscribtion-link:hover , 
+.subscribtion-link:hover,
 .subscribtion-link:focus {
   fill: var(--color-brand);
   background-color: var(--color-brand);
