@@ -913,6 +913,10 @@ transform: translateY(0);
   background-color: var(--color-subscr-icon-bcg);
   border-radius: 50%;
   cursor: pointer;
+  fill: var(--color-main-bcg);
+    transition-property: fill, background-color, border-shadow, filter;
+    transition-duration: 250ms;
+    transition-timing-function: var(--color-function);
 }
 
 .subscribtion-link:hover,
