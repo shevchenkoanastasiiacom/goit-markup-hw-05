@@ -762,6 +762,7 @@ text-align: center;
   transition-timing-function: var(--color-function);
 }
 
+
 /* .clients-icon {
   fill: var(--color-border-clients);
       transition-property: fill;
@@ -773,6 +774,7 @@ text-align: center;
 .clients-icon:focus {
   fill: var(--color-brand);
 } */
+
 
 .clients-img:hover,
 .clients-img:focus {
