@@ -724,7 +724,7 @@ text-align: center;
   background-color: var(--color-subscr-icon-bcg);
   border-radius: 50%;
   cursor: pointer;
-  transition-property: fill, background-color, shadow;
+  transition-property: fill, background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: var(--color-function);
 }
@@ -882,13 +882,10 @@ text-align: center;
   transition: transform 250ms var(--color-function);
 }
 
-.link-thumb:hover .link-text {
+.photo-link:hover .link-text , .photo-link:focus .link-text {
   transform: translateY(0);
 }
 
-.link-thumb:focus .link-text {
-  transform: translateY(0);
-}
 
 /* .link-thumb {
   position: relative;
@@ -979,7 +976,8 @@ text-align: center;
 .container.footer-list {
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  gap: 70px;
 }
 
 .address .footer-list {
@@ -1063,8 +1061,25 @@ text-align: center;
   color: var(--color-brand);
 }
 
-.subscribtion-list {
+.subscribtion {}
+
+.subscribtion-head {
   display: flex;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-main-bcg);
+}
+
+.subscribtion-list {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
   gap: 10px;
 }
 
@@ -1079,21 +1094,25 @@ text-align: center;
   justify-content: center;
   width: 44px;
   height: 44px;
+
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
   fill: var(--color-main-bcg);
   background-color: var(--color-subscr-icon-bcg);
-  border-radius: 50%;
-  cursor: pointer;
+  transition-property: fill, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: var(--color-function);
 }
 
 .subscribtion-link:hover,
 .subscribtion-link:focus {
-  fill: var(--color-brand);
   background-color: var(--color-brand);
 }
 
 /* leave your Email footer */
 
-.sign-text {
+/* .sign-text {
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -1152,6 +1171,6 @@ text-align: center;
 
 .sign-icon {
   fill: var(--color-main-bcg);
-}
+} */
 
 /* end */
